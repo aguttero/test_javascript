@@ -60,3 +60,19 @@ Part 5 — Token Management
 Access token expires in 1 hour; refresh token is valid 60 days from last use. Includes the POST /oauth/v2/refresh call you'll implement in Apps Script.
 Part 6 — Troubleshooting table covering the most common errors (redirect_uri_mismatch, invalid_client, scope issues, pop-up blocks).
 Part 7 — Next Steps bridging into the Google Apps Script automation with rate limiting notes.
+
+
+Complete Corrected Call (with all optional parameters documented)
+Query Parameter Value               Effect
+attachAuditReport = true            Appends the Adobe Sign audit trail page — this is what you were missing
+attachSupportingDocuments = true    Includes any supporting documents attached to the agreement
+versionId (omit)                    Omitting returns the latest/final version — correct for completed agreements
+
+___________
+File Structure in Apps Script: 
+Code.gs         Main orchestrator — workflow entry point and triggers
+Config.gs       All constants — Client ID, Sheet ID, field mappings
+Auth.gs         OAuth2 service configuration and callback handler
+AdobeSign.gs    Adobe Sign REST API calls (list, download, baseUri)
+PdfParser.gs    PDF AcroForm extraction using pdf-lib via CDN
+SheetsWriter.gs Google Sheets row building and formatting
