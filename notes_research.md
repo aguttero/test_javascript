@@ -7,6 +7,18 @@ Libreria on-line
 <script src="https://unpkg.com/pdf-lib"></script>
 https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js
 
+If you aren't using a package manager, UMD modules are available on the unpkg and jsDelivr CDNs:
+
+https://unpkg.com/pdf-lib/dist/pdf-lib.js
+https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
+https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.js
+https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js
+NOTE: if you are using the CDN scripts in production, you should include a specific version number in the URL, for example:
+https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js
+https://cdn.jsdelivr.net/npm/pdf-lib@1.4.0/dist/pdf-lib.min.js
+
+
+
 
 GitHub:
 https://github.com/Hopding/pdf-lib
