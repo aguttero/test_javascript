@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is an H1</h1>
+    <!-- se recomienda poner el js al final, antes del cierre del body -->
+    <script src="index.js" charset="UTF-8"></script> 
+    <script type="text/javascript">
+        var myName = "alejanDro";
+        console.log("initial: ", myName);
+        // var yourName = "Jack Bauer";
+        // alert("Hello " + yourName + " yo, " + myName + " te deseo lo mejor!");
+        firstLetter = myName.slice(0,1).toUpperCase();
+        restOfName = myName.slice(1,myName.length).toLowerCase();
+        finalName = firstLetter + restOfName;
+
+        //myName = myName.toUpperCase();
+        console.log("converted:" ,finalName);
+        // myName = "alejo";
+        //myName = myName.toLowerCase();
+        //console.log(myName)
+
+        // var userPrompt = prompt("Enter your text");
+        // var maxLenght = 20
+        // alert ("You used: " + userPrompt.length + " chars");
+        // alert ("You used: " + userPrompt.length + " chars. You have " + (maxLenght - userPrompt.length) + " left." );
+        // alert ("Your sliced message is: " + userPrompt.slice(0,maxLenght));
+
+    </script>
+    
+</body>
+</html>
