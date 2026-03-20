@@ -8,13 +8,53 @@
 <body>
     <h1>This is an H1</h1>
     <script>
-        // var myName = "Alejo";
+        var myName = "alejanDro";
+        console.log("initial: ", myName);
         // var yourName = "Jack Bauer";
         // alert("Hello " + yourName + " yo, " + myName + " te deseo lo mejor!");
-        var userPrompt = prompt("Enter your text");
-        alert ("You used: " + userPrompt.length + " chars");
-        alert ("You used: " + userPrompt.length + " chars. You have " + (10 - userPrompt.length) + " left." );
-        alert ("Your sliced message is: " + userPrompt.slice(0,10));
+        firstLetter = myName.slice(0,1).toUpperCase();
+        restOfName = myName.slice(1,myName.length).toLowerCase();
+        finalName = firstLetter + restOfName;
+
+        //myName = myName.toUpperCase();
+        console.log("converted:" ,finalName);
+        // myName = "alejo";
+        //myName = myName.toLowerCase();
+        //console.log(myName)
+
+        // var userPrompt = prompt("Enter your text");
+        // var maxLenght = 20
+        // alert ("You used: " + userPrompt.length + " chars");
+        // alert ("You used: " + userPrompt.length + " chars. You have " + (maxLenght - userPrompt.length) + " left." );
+        // alert ("Your sliced message is: " + userPrompt.slice(0,maxLenght));
+
+    </script>
+    <script>
+        getMilk(10);
+        function getMilk(moneyAmount) { 
+            const milkCost = 1.5;
+            var bottlesToBuy = Math.floor(moneyAmount/milkCost);
+            // console.log("leaveHouse");
+            // console.log("moveRight");
+            // console.log("moveRight");
+            // console.log("moveUp");
+            // console.log("moveUp");
+            // console.log("moveUp");
+            // console.log("moveUp");
+            // console.log("moveRight");
+            console.log("moveRight");
+            console.log("Buy " + bottlesToBuy + " bottles of milk");
+            console.log("This is a Random %: "+ (Math.floor(Math.random()*100)+1)+"%");
+            console.log("moveLeft");
+            // console.log("moveLeft");
+            // console.log("moveDown");
+            // console.log("moveDown");
+            // console.log("moveDown");
+            // console.log("moveDown");
+            // console.log("moveLeft");
+            // console.log("moveLeft");
+            console.log("enterHouse");
+        }
     </script>
 </body>
 </html>
