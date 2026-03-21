@@ -68,3 +68,12 @@ function fibonacciSeries (n) {
     return output;
 }
 
+// changeToInvisible("item")
+
+function changeToInvisible (classItem){
+    console.log(classItem)
+    document.querySelector(classItem).classList.add("invisible")
+    document.querySelector(classItem).classList.toggle("invisible")
+
+}
+
